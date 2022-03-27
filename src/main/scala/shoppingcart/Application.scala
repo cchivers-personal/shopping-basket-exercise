@@ -5,7 +5,8 @@ import shoppingcart.domain.{InvalidItems, Item, Price}
 object Application {
 
   def process(inputArgs: Array[String]): String = {
-    val checkout = Checkout()
+    val offers   = Offers.load()
+    val checkout = Checkout(offers)
     val result   = validateArguments(inputArgs).map(checkout.calculateTotal)
     formatResult(result)
   }
