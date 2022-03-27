@@ -1,0 +1,41 @@
+*.class
+*.log
+
+*.bk.*
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.bsp/
+
+# VS-Code specific
+.bloop/
+.metals/
+.vscode/
+project/.bloop/
+project/metals.sbt
+project/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+.idea/
+.idea_modules/
+*.iml
+.classpath
+.project
+.settings
+
+.vagrant/
+.DS_Store
+
+.ensime
+.ensime_cache/
+.floo
+.flooignore
